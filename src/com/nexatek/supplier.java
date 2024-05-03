@@ -100,7 +100,7 @@ PreparedStatement pst;
         jLabel2.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel2.setText("T.P Number");
 
-        save_supplier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/save.png"))); // NOI18N
+        save_supplier.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/save.png")); // NOI18N
         save_supplier.setText("Save");
         save_supplier.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,7 +108,7 @@ PreparedStatement pst;
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/search x30.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/search x30.png")); // NOI18N
         jButton2.setText("Search");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,10 +116,10 @@ PreparedStatement pst;
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/delete.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/delete.png")); // NOI18N
         jButton3.setText("Delete");
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/update.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/update.png")); // NOI18N
         jButton4.setText("Update");
 
         jLabel5.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N

@@ -141,9 +141,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="17" style="1"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/nexatek/images/img/supplier.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Supplier"/>
           </Properties>
           <Events>
@@ -160,9 +157,6 @@
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="17" style="1"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/nexatek/images/img/emp.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Employee"/>
           </Properties>
@@ -181,9 +175,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="17" style="1"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/nexatek/images/img/customer.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Technicians"/>
           </Properties>
           <Events>
@@ -200,9 +191,6 @@
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="17" style="1"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/nexatek/images/img/product.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Product"/>
           </Properties>
@@ -221,9 +209,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="17" style="1"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/nexatek/images/img/sales_menu.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Sales"/>
           </Properties>
           <Events>
@@ -240,9 +225,6 @@
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="17" style="1"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/nexatek/images/img/invo.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Invoice"/>
           </Properties>
@@ -261,9 +243,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="17" style="1"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/nexatek/images/img/reports.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Reports"/>
           </Properties>
           <Events>
@@ -281,9 +260,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="17" style="1"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/nexatek/images/img/customer.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Customers"/>
           </Properties>
           <Events>
@@ -294,9 +270,6 @@
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="17" style="1"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/nexatek/images/img/icons8-power-off-48.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Power Off"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -310,9 +283,6 @@
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="17" style="1"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/nexatek/images/img/icons8-exit-50.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="LOGOUT"/>
           </Properties>
@@ -330,9 +300,6 @@
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="17" style="1"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/nexatek/images/img/product.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="OUT OF STOCK"/>
           </Properties>

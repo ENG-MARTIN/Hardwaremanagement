@@ -110,7 +110,7 @@ public class employee extends javax.swing.JPanel {
             }
         });
 
-        save.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/save.png"))); // NOI18N
+        save.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/save.png")); // NOI18N
         save.setText("Save");
         save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,7 +118,7 @@ public class employee extends javax.swing.JPanel {
             }
         });
 
-        search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/search x30.png"))); // NOI18N
+        search.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/search x30.png")); // NOI18N
         search.setText("Search");
         search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,7 +126,7 @@ public class employee extends javax.swing.JPanel {
             }
         });
 
-        delete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/delete.png"))); // NOI18N
+        delete.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/delete.png")); // NOI18N
         delete.setText("Delete");
         delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,7 +134,7 @@ public class employee extends javax.swing.JPanel {
             }
         });
 
-        update.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/update.png"))); // NOI18N
+        update.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/update.png")); // NOI18N
         update.setText("Update");
         update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

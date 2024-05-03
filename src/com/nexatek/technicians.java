@@ -199,7 +199,7 @@ private void  products(){
         jLabel4.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel4.setText("Joining Date");
 
-        save.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/save.png"))); // NOI18N
+        save.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/save.png")); // NOI18N
         save.setText("Save");
         save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -207,7 +207,7 @@ private void  products(){
             }
         });
 
-        search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/search x30.png"))); // NOI18N
+        search.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/search x30.png")); // NOI18N
         search.setText("Search");
         search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -215,7 +215,7 @@ private void  products(){
             }
         });
 
-        delete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/delete.png"))); // NOI18N
+        delete.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/delete.png")); // NOI18N
         delete.setText("Delete");
         delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -223,7 +223,7 @@ private void  products(){
             }
         });
 
-        update.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/update.png"))); // NOI18N
+        update.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/update.png")); // NOI18N
         update.setText("Update");
         update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -392,7 +392,7 @@ private void  products(){
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()

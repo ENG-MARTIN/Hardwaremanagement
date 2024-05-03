@@ -34,16 +34,16 @@ public class splash extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Noto Serif Display SemiCondensed ExtraBold", 2, 14)); // NOI18N
-        jLabel1.setText("powered by nexatech group");
+        jLabel1.setText("powered by chipcode group");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 650, 230, 40));
         getContentPane().add(progressbar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 610, 700, 20));
 
         jLabel4.setFont(new java.awt.Font("Noto Sans", 0, 18)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/splash1.png"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 1050, 580));
+        jLabel4.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/splash1.png")); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 1050, 580));
 
         jLabel2.setFont(new java.awt.Font("Noto Sans CJK KR Black", 2, 28)); // NOI18N
-        jLabel2.setText("Lucky Electricals Management System");
+        jLabel2.setText("Mr. Hardware System");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 610, -1));
 
         pack();

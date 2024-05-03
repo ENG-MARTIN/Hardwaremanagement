@@ -250,7 +250,7 @@
             <Component class="javax.swing.JButton" name="save">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/nexatek/images/img/save.png"/>
+                  <Image iconType="2" name="/home/chipcode/Pictures/imgs/save.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Save"/>
               </Properties>
@@ -261,7 +261,7 @@
             <Component class="javax.swing.JButton" name="search">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/nexatek/images/img/search x30.png"/>
+                  <Image iconType="2" name="/home/chipcode/Pictures/imgs/search x30.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Search"/>
               </Properties>
@@ -272,7 +272,7 @@
             <Component class="javax.swing.JButton" name="delete">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/nexatek/images/img/delete.png"/>
+                  <Image iconType="2" name="/home/chipcode/Pictures/imgs/delete.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Delete"/>
               </Properties>
@@ -283,7 +283,7 @@
             <Component class="javax.swing.JButton" name="update">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/nexatek/images/img/update.png"/>
+                  <Image iconType="2" name="/home/chipcode/Pictures/imgs/update.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Update"/>
               </Properties>

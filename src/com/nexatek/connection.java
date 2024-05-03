@@ -12,9 +12,9 @@ import java.sql.SQLException;
 
 public class connection {
     public static Connection connect() {
-        String jdbcURL = "jdbc:postgresql://localhost:5432/luckyelectronicals";
+        String jdbcURL = "jdbc:postgresql://localhost:5432/hardwaremanagement";
         String username = "postgres";
-        String password = "planet";
+        String password = "postgres";
 
         try {
             Connection connection = DriverManager.getConnection(jdbcURL, username, password);

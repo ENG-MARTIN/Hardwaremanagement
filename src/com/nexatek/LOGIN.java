@@ -52,8 +52,8 @@ PreparedStatement pst;
         jPanel1.setBackground(new java.awt.Color(0, 153, 0));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/login.png"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 310, 290));
+        jLabel5.setIcon(new javax.swing.ImageIcon("/home/chipcode/Pictures/imgs/login.png")); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 310, 290));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, 520));
 

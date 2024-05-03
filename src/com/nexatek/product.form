@@ -47,7 +47,7 @@
                       <Component id="jPanel3" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel2" alignment="0" pref="1043" max="32767" attributes="0"/>
+                          <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
                           <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -88,13 +88,11 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jButton2" min="-2" pref="200" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="save" min="-2" pref="200" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="254" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jButton2" min="-2" pref="200" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="9" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -133,9 +131,9 @@
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -169,7 +167,7 @@
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                               <Component id="update" min="-2" pref="178" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="32" max="32767" attributes="0"/>
                               <Component id="delete" min="-2" pref="178" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="save_damage" min="-2" pref="158" max="-2" attributes="0"/>
@@ -305,7 +303,7 @@
                   <Color blue="ff" green="99" red="0" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/nexatek/images/img/save.png"/>
+                  <Image iconType="2" name="/home/chipcode/Pictures/imgs/save.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Save"/>
               </Properties>
@@ -319,7 +317,7 @@
                   <Color blue="33" green="99" red="0" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/nexatek/images/img/search x30.png"/>
+                  <Image iconType="2" name="/home/chipcode/Pictures/imgs/search x30.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Search"/>
               </Properties>
@@ -333,7 +331,7 @@
                   <Color blue="0" green="0" red="cc" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/nexatek/images/img/delete.png"/>
+                  <Image iconType="2" name="/home/chipcode/Pictures/imgs/delete.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Delete"/>
               </Properties>
@@ -347,7 +345,7 @@
                   <Color blue="66" green="cc" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/nexatek/images/img/update.png"/>
+                  <Image iconType="2" name="/home/chipcode/Pictures/imgs/update.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Update"/>
               </Properties>
@@ -446,9 +444,6 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="99" red="0" type="rgb"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/nexatek/images/damage.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Save As Damage"/>
               </Properties>

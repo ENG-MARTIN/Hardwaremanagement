@@ -62,7 +62,6 @@ PreparedStatement pst;
         jToggleButton1.setBackground(new java.awt.Color(0, 153, 51));
         home_bnt_grp.add(jToggleButton1);
         jToggleButton1.setFont(new java.awt.Font("Cantarell", 1, 17)); // NOI18N
-        jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/supplier.png"))); // NOI18N
         jToggleButton1.setText("Supplier");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,7 +72,6 @@ PreparedStatement pst;
         jToggleButton2.setBackground(new java.awt.Color(255, 204, 102));
         home_bnt_grp.add(jToggleButton2);
         jToggleButton2.setFont(new java.awt.Font("Cantarell", 1, 17)); // NOI18N
-        jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/emp.png"))); // NOI18N
         jToggleButton2.setText("Employee");
         jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,7 +82,6 @@ PreparedStatement pst;
         jToggleButton3.setBackground(new java.awt.Color(0, 153, 255));
         home_bnt_grp.add(jToggleButton3);
         jToggleButton3.setFont(new java.awt.Font("Cantarell", 1, 17)); // NOI18N
-        jToggleButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/customer.png"))); // NOI18N
         jToggleButton3.setText("Technicians");
         jToggleButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,7 +92,6 @@ PreparedStatement pst;
         jToggleButton4.setBackground(new java.awt.Color(204, 0, 0));
         home_bnt_grp.add(jToggleButton4);
         jToggleButton4.setFont(new java.awt.Font("Cantarell", 1, 17)); // NOI18N
-        jToggleButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/product.png"))); // NOI18N
         jToggleButton4.setText("Product");
         jToggleButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,7 +102,6 @@ PreparedStatement pst;
         jToggleButton5.setBackground(new java.awt.Color(0, 153, 51));
         home_bnt_grp.add(jToggleButton5);
         jToggleButton5.setFont(new java.awt.Font("Cantarell", 1, 17)); // NOI18N
-        jToggleButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/sales_menu.png"))); // NOI18N
         jToggleButton5.setText("Sales");
         jToggleButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,7 +112,6 @@ PreparedStatement pst;
         jToggleButton6.setBackground(new java.awt.Color(255, 204, 102));
         home_bnt_grp.add(jToggleButton6);
         jToggleButton6.setFont(new java.awt.Font("Cantarell", 1, 17)); // NOI18N
-        jToggleButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/invo.png"))); // NOI18N
         jToggleButton6.setText("Invoice");
         jToggleButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,7 +122,6 @@ PreparedStatement pst;
         jToggleButton7.setBackground(new java.awt.Color(0, 153, 255));
         home_bnt_grp.add(jToggleButton7);
         jToggleButton7.setFont(new java.awt.Font("Cantarell", 1, 17)); // NOI18N
-        jToggleButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/reports.png"))); // NOI18N
         jToggleButton7.setText("Reports");
         jToggleButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,7 +132,6 @@ PreparedStatement pst;
         jToggleButton8.setBackground(new java.awt.Color(255, 204, 102));
         home_bnt_grp.add(jToggleButton8);
         jToggleButton8.setFont(new java.awt.Font("Cantarell", 1, 17)); // NOI18N
-        jToggleButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/customer.png"))); // NOI18N
         jToggleButton8.setText("Customers");
         jToggleButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,12 +140,10 @@ PreparedStatement pst;
         });
 
         jLabel2.setFont(new java.awt.Font("Cantarell", 1, 17)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/icons8-power-off-48.png"))); // NOI18N
         jLabel2.setText("Power Off");
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jToggleButton9.setFont(new java.awt.Font("Cantarell", 1, 17)); // NOI18N
-        jToggleButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/icons8-exit-50.png"))); // NOI18N
         jToggleButton9.setText("LOGOUT");
         jToggleButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,7 +154,6 @@ PreparedStatement pst;
         jToggleButton10.setBackground(new java.awt.Color(204, 0, 0));
         home_bnt_grp.add(jToggleButton10);
         jToggleButton10.setFont(new java.awt.Font("Cantarell", 1, 17)); // NOI18N
-        jToggleButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/nexatek/images/img/product.png"))); // NOI18N
         jToggleButton10.setText("OUT OF STOCK");
         jToggleButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
