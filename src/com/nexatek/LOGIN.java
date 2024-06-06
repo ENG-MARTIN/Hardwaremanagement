@@ -94,75 +94,60 @@ PreparedStatement pst;
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginbtnActionPerformed
-//              String sql = "select * from users where username = ? and password =?";
-////             String sql2="select * from ADMIN_LOGIN where ID=? and USERNAME=?";
-//
-//            try{
-//            pst = conn.prepareStatement(sql);
-//            pst.setString(1, username.getText().trim());
-//            pst.setString(2, password.getText().trim());
-//
-//            rst = pst.executeQuery();
-//            
-//            if(rst.next()){                  
-//                this.setVisible(false);
-////                 JOptionPane.showMessageDialog(null, "ALERT!", "YOU ARE UNDER SUPERVISION",5);
-//            JOptionPane.showMessageDialog(null,"Welcome.."+username.getText());
-//             Home e = new Home();
-//            e.setVisible(true);               
-//           }
-//            else
-//            {
-//                JOptionPane.showMessageDialog(null, "olimba olimba");
-//            }
-//            }
-//            catch(Exception e){
-//                JOptionPane.showMessageDialog(null, e);
-//            }
+//       
+           String sql = "SELECT * FROM employeestbl WHERE username = ? AND password = ?";
+           String sql2 = "SELECT * FROM administrators WHERE username = ? AND password = ?";
+    boolean loginSuccessful = false;
 
+    try {
+        // Check employees table
+        pst = conn.prepareStatement(sql);
+        pst.setString(1, username.getText().trim());
+        pst.setString(2, password.getText().trim());
+        rst = pst.executeQuery();
 
-            String sql = "select * from employeestbl where username = ? and password = ?";
-            String sql2="select * from administrators where username=? and password=?";
-            try{
-            pst = conn.prepareStatement(sql);
-            pst.setString(1, username.getText().trim());
-            pst.setString(2, password.getText().trim());
-            rst = pst.executeQuery();
-            
-            if(rst.next()){                  
-                this.setVisible(false);
-                 JOptionPane.showMessageDialog(null,"Welcome.."+username.getText());
-             counter count = new counter();
-            count.setVisible(true);               
-           }
-            
-            /////////////////////
+        if (rst.next()) {
+            this.setVisible(false);
+            counter count = new counter();
+            count.setVisible(true);
+            loginSuccessful = true;
+        }
+        rst.close();
+        pst.close();
+
+        // Check administrators table if not already logged in
+        if (!loginSuccessful) {
             pst = conn.prepareStatement(sql2);
             pst.setString(1, username.getText().trim());
             pst.setString(2, password.getText().trim());
             rst = pst.executeQuery();
-            if(rst.next()){
-                rst.close();
-                pst.close();
+
+            if (rst.next()) {
                 this.setVisible(false);
                 Home e = new Home();
-                e.setVisible(true); 
-                 JOptionPane.showMessageDialog(null, "Welcome... "+username.getText());
-                 
-           }
-           
+                e.setVisible(true);
+                loginSuccessful = true;
             }
-            catch(Exception e){
-                    JOptionPane.showMessageDialog(null, e);                     
-                    }
-            finally{
-            try{
-            rst.close();
-            pst.close();
-            }
-            catch(Exception e){} 
-            }
+        }
 
+        // Show error message if login was not successful
+        if (!loginSuccessful) {
+            JOptionPane.showMessageDialog(null, "Invalid username or password", "Login Failed", JOptionPane.ERROR_MESSAGE);            
+        }
+    } catch (Exception e) {
+        JOptionPane.showMessageDialog(null, e, "Error", JOptionPane.ERROR_MESSAGE);
+    } finally {
+        try {
+            if (rst != null) {
+                rst.close();
+            }
+            if (pst != null) {
+                pst.close();
+            }
+        } catch (Exception e) {
+            // Log the exception (if necessary)
+        }
+    }
             
     }//GEN-LAST:event_loginbtnActionPerformed
 

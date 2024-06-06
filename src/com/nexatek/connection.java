@@ -18,7 +18,6 @@ public class connection {
 
         try {
             Connection connection = DriverManager.getConnection(jdbcURL, username, password);
-            System.out.println("Connected to the PostgreSQL database!");
             return connection;
         } catch (SQLException e) {
             System.err.println("Database connection error: " + e.getMessage());

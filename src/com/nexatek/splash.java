@@ -67,7 +67,7 @@ public static void main(String args[]) {
        LOGIN login = new   LOGIN();
         try{
             for(int i= 0; i<= 100;i++){
-        Thread.sleep(80);
+        Thread.sleep(50);
         spl.progressbar.setValue(i);
         }
             new splash().setVisible(false);
