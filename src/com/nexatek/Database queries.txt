@@ -1,0 +1,56 @@
+echo "# lucky_electricals_pos" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/KEVINcustoms/lucky_electricals_pos.git
+git push -u origin main
+
+
+https://github.com/KEVINcustoms/lucky_electricals.git
+
+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
+*217*402#
+0726881844
+*252#
+combo box of three prices
+employee toggle button
+jasper reports receipt printing
+
+
+products table
+create table products(productid serial primary key, barcode text,name text , size text, price real, quantity real, category text,supplier_id int references suppliers(supplier_id), cost_price real, purchasedate date);
+
+solditems
+
+create table solditems(id serial, receipt_number int, itemid text, name text, quantity int, itemprice real, total real, sold_by text, time text, selldate date, cash real);
+
+Users
+create table userstbl(id serial primary key,empname text,contact text,empaddress text,role text,sex text, age int, joiningdate date, username text, password text);
+
+
+damagedproducts
+create table damagedproducts(productid serial, barcode text primary key,name text, size text, price real,quantity int, category text, supplier_id int references suppliers(supplier_id));
+
+users
+create table users(id serial primary key,username text,password text);
+
+suppliers
+create table suppliers(supplier_id int primary key,name text,tpnumber text,product text);
+
+
+administrators
+create table administrators(id serial,username text,password text);
+
+invoice details
+create table invoice_details(invoice_number int, sales_number int);
+
+customers
+ create table customers(Customer_name text, phone_number text, invoice_number text);
+
+out of stock table
+
+create table out_of_stock(barcode text,name text primary key, size text, price real, quantity real, category text,supplier_id int references suppliers(supplier_id),cost_price real);
+
+create table sub_cost_price
+create table sub_cost_price(id serial, product_name text, sub_costP real,quantity int);
