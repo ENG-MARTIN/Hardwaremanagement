@@ -19,28 +19,36 @@ jasper reports receipt printing
 
 
 products table
-create table products(productid serial primary key, barcode text,name text , size text, price real, quantity real, category text,supplier_id int references suppliers(supplier_id), cost_price real, purchasedate date);
+create table products(productid serial primary key, barcode text,name text , size text, price real, quantity real, category text,supplier_id int references suppliers(supplier_id), cost_price real, purchasedate date,status text,profit real);
 
 solditems
 
-create table solditems(id serial, receipt_number int, itemid text, name text, quantity int, itemprice real, total real, sold_by text, time text, selldate date, cash real);
+create table solditems(id serial, receipt_number int, itemid text, name text, quantity int, itemprice real, total real, sold_by text, time text, selldate date, cash real, profit real,Class text);
+
 
 Users
 create table userstbl(id serial primary key,empname text,contact text,empaddress text,role text,sex text, age int, joiningdate date, username text, password text);
 
 
 damagedproducts
-create table damagedproducts(productid serial, barcode text primary key,name text, size text, price real,quantity int, category text, supplier_id int references suppliers(supplier_id));
+create table damagedproducts(productid serial, barcode text primary key,name text, size text, price real,quantity int, category text, supplier_id int references suppliers(supplier_id),status text);
 
 users
 create table users(id serial primary key,username text,password text);
 
 suppliers
-create table suppliers(supplier_id int primary key,name text,tpnumber text,product text);
+create table suppliers(supplier_id int primary key,name text,tpnumber text);
 
 
 administrators
 create table administrators(id serial,username text,password text);
+
+receipts
+create table receipts(receipt_no serial, sales_number int);
+
+invoices
+crate table invoices(id serial, invoice_number int, itemid text, name text, quantity int, itemprice real, total real, sold_by text, time text, selldate date, status text);
+
 
 invoice details
 create table invoice_details(invoice_number int, sales_number int);
@@ -50,7 +58,7 @@ customers
 
 out of stock table
 
-create table out_of_stock(barcode text,name text primary key, size text, price real, quantity real, category text,supplier_id int references suppliers(supplier_id),cost_price real);
+create table out_of_stock(productid,barcode text,name text primary key, size text, price real, quantity real, category text,supplier_id int references suppliers(supplier_id),cost_price real);
 
 create table sub_cost_price
 create table sub_cost_price(id serial, product_name text, sub_costP real,quantity int);

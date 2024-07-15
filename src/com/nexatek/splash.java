@@ -33,7 +33,7 @@ public class splash extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Noto Serif Display SemiCondensed ExtraBold", 2, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Noto Serif Display SemiCondensed ExtraBold", 2, 18)); // NOI18N
         jLabel1.setText("powered by chipcode group");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 650, 230, 40));
         getContentPane().add(progressbar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 610, 700, 20));

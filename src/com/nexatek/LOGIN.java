@@ -4,6 +4,7 @@
  */
 package com.nexatek;
 
+import java.awt.event.KeyEvent;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -69,6 +70,11 @@ PreparedStatement pst;
         jPanel2.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 430, 60));
 
         password.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder("Username"), "Password"));
+        password.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passwordKeyPressed(evt);
+            }
+        });
         jPanel2.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 430, 60));
 
         loginbtn.setBackground(new java.awt.Color(0, 153, 0));
@@ -119,7 +125,6 @@ try {
         }
         loginSuccessful = true;
     }
-
     // Show error message if login was not successful
     if (!loginSuccessful) {
         JOptionPane.showMessageDialog(null, "Invalid username or password", "Login Failed", JOptionPane.ERROR_MESSAGE);            
@@ -138,9 +143,57 @@ try {
         // Log the exception (if necessary)
     }
 }
-
             
     }//GEN-LAST:event_loginbtnActionPerformed
+
+    private void passwordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+        String sql = "SELECT role FROM userstbl WHERE username = ? AND password = ?";
+boolean loginSuccessful = false;
+
+try {
+    // Check employees table
+    pst = conn.prepareStatement(sql);
+    pst.setString(1, username.getText().trim());
+    pst.setString(2, password.getText().trim());
+    rst = pst.executeQuery();
+
+    if (rst.next()) {
+        String role = rst.getString("role");
+
+        if ("Administrator".equalsIgnoreCase(role)) {
+            this.setVisible(false);
+            Home e = new Home();
+            e.setVisible(true);
+        } else if ("Attendant".equalsIgnoreCase(role)) {
+            this.setVisible(false);
+            counter count = new counter();
+            count.setVisible(true);
+        }
+        loginSuccessful = true;
+    }
+
+    // Show error message if login was not successful
+    if (!loginSuccessful) {
+        JOptionPane.showMessageDialog(null, "Invalid username or password", "Login Failed", JOptionPane.ERROR_MESSAGE);            
+    }
+} catch (Exception e) {
+    JOptionPane.showMessageDialog(null, e, "Error", JOptionPane.ERROR_MESSAGE);
+} finally {
+    try {
+        if (rst != null) {
+            rst.close();
+        }
+        if (pst != null) {
+            pst.close();
+        }
+    } catch (Exception e) {
+        // Log the exception (if necessary)
+    }
+}}
+        
+    }//GEN-LAST:event_passwordKeyPressed
 
     /**
      * @param args the command line arguments
